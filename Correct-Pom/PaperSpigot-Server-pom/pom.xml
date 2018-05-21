@@ -285,24 +285,6 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
-        <groupId>com.wolvereness</groupId>
-        <artifactId>overmapped</artifactId>
-        <version>0.0.2</version>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>map</goal>
-            </goals>
-            <configuration>
-              <maps>${basedir}/target/maps.yml</maps>
-              <input>${basedir}/target/${project.artifactId}-${project.version}.jar</input>
-              <original>${basedir}/target/unmapped-${project.artifactId}-${project.version}.jar</original>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
     <pluginManagement>
       <plugins>
